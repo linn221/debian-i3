@@ -1,0 +1,45 @@
+{
+  "files.autoSave": "onFocusChange",
+  "keyboard.dispatch": "keyCode",
+  "window.zoomLevel": 1,
+  "editor.fontSize": 14,
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Darcula",
+  "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace",
+  "search.smartCase": true,
+  "editor.lineNumbers": "on",
+  "editor.bracketPairColorization.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "editor.suggestSelection": "recentlyUsed",
+  "editor.stickyScroll.enabled": false,
+  "go.toolsManagement.autoUpdate": true,
+  "files.associations": {
+    "*.tmpl": "gotmpl",
+    "*.gotmpl": "html"
+  },
+  "[go]": {
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "explorer.confirmDelete": false,
+  "git.openRepositoryInParentFolders": "never",
+  "vim.vimrc.enable": true,
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "window.customTitleBarVisibility": "windowed",
+  "chat.agent.enabled": false,
+  "remote.autoForwardPorts": false,
+  "chat.disableAIFeatures": true,
+  // "[html]": {
+  //   "editor.defaultFormatter": "vscode.html-language-features"
+  // }
+}

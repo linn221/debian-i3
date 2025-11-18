@@ -1,0 +1,103 @@
+// {
+// 	"Error Handle": {
+// 		"prefix": "rnil",
+// 		"body": [
+// 			"if err != nil {",
+// 			"$0",
+// 			"\treturn",
+// 			"}",
+// 		],
+// 	},
+// 	"Inline error Handleee": {
+// 		"prefix": "ehh",
+// 		"body": [
+// 			"if err := $1; err != nil {",
+// 			"$0",
+// 			"\treturn",
+// 			"}",
+// 		],
+// 		"description": "Log output to console"
+// 	},
+// 	"Inline error Handle": {
+// 		"prefix": "eh",
+// 		"body": [
+// 			"if err := $0; err != nil {",
+// 			"\treturn nil, ggVerr",
+// 			"}",
+// 		],
+// 		"description": "Log output to console"
+// 	},
+// 	"Inline error Handle validate#2": {
+// 		"prefix": "ev",
+// 		"body": [
+// 			"if err = $0; err != nil {",
+// 			"\treturn",
+// 			"}",
+// 		],
+// 		"description": "Log output to console"
+// 	},
+// 	"Time Stamp": {
+// 		"prefix": "now",
+// 		"body": [
+// 			"[$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND]\n$0"
+// 		],
+// 	},
+// 	"Gin Error": {
+// 		"prefix": "bdq",
+// 		"body": [
+// 			"\tc.JSON(http.StatusBadRequest, respError(_$0, err))",
+// 			// "\treturn",
+// 		],
+// 	},
+// 	"Gin INternal": {
+// 		"prefix": "isr",
+// 		"body": [
+// 			"\tc.JSON(http.StatusInternalServerError, respError(_$0, err))",
+// 			// "\treturn",
+// 		],
+// 	},
+// 	"Gin Okay": {
+// 		"prefix": "okay",
+// 		"body": [
+// 			"c.JSON(http.StatusOK, respJSON(\"success\", $0))",
+// 		],
+// 	},
+// 	"Gin Server": {
+// 		"prefix": "ictx",
+// 		"body": [
+// 			"\tctx := c.Request.Context()",
+// 			"\tappId, err := myctx.GetAppIdFromContext(ctx)",
+// 			"\tif err != nil {",
+// 			"\t\tc.JSON(http.StatusInternalServerError, respError(\"cannot get app_id\", err))",
+// 			"\t\treturn",
+// 			"\t}",
+// 		],
+// 	},
+// 	"Bind request error": {
+// 		"prefix": "iinput",
+// 		"body": [
+// 			"input, err := BindJson[$0](c)",
+// 			"\tif err != nil {",
+// 			"\t\tc.JSON(http.StatusBadRequest, respError(_InvalidRequest, err))",
+// 			"\t\treturn",
+// 			"\t}",
+// 		],
+// 	},
+// 	"Bind request error2": {
+// 		"prefix": "iid",
+// 		"body": [
+// 			"id, err := GetIdParam(c)",
+// 			"\tif err != nil {",
+// 			"\t\tc.JSON(http.StatusBadRequest, respError(_InvalidRequest, err))",
+// 			"\t\treturn",
+// 			"\t}",
+// 		],
+// 	},
+// 	"dbbb": {
+// 		"prefix": "idb",
+// 		"body": [
+// 			"db := config.GetDBCtx(ctx)",
+// 			"$0",
+// 		],
+// 	}
+// }
